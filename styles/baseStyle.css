@@ -43,6 +43,11 @@ header {
     text-decoration: none;
 }
 
+.nav-option {
+    padding: 8px 10px;
+    border-radius: 12px;
+}
+
 .main {
     flex-grow: 1;
 }
