@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home page</title>
-    <link rel="stylesheet" href="./styles/baseStyle.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/baseStyle.css" />
+    <link rel="stylesheet" href="./styles/branching.css" />
+  </head>
+  <body>
     <header>
-        <h1>Git Tutorial</h1>
-        <nav>
-            <a class="nav-option active" href="index.html" >[Home]</a>
-            <a class="nav-option active" href="project.html">[Project]</a>
-            <a class="nav-option active" href="changes.html">[Changes]</a>
-            <a class="nav-option active" href="branching.html">[Branching]</a>
-            <a class="nav-option active" href="about.html">[About Us]</a>
-        </nav>
+      <h1>Git Tutorial</h1>
+      <nav>
+        <a class="nav-option active" href="index.html">[Home]</a>
+        <a class="nav-option active" href="project.html">[Project]</a>
+        <a class="nav-option active" href="changes.html">[Changes]</a>
+        <a class="nav-option active" href="branching.html">[Branching]</a>
+        <a class="nav-option active" href="about.html">[About Us]</a>
+      </nav>
     </header>
     <main class="main">
+      <div class="branching-page">
+        <h2>[What is branching in git]</h2>
+        <p>
+          Branching works as a security measure for you and your teammats when
+          working together on a project.
+        </p>
+      </div>
+      <div class="branching-page">
+        <h2>[Why you should use it]</h2>
+        <p>
+          Branching works as a security measure for you and your teammats when
+          working together on a project.
+        </p>
+      </div>
+      <div class="branching-page">
+        <h2>[Diffrent Git commands and when to use them]</h2>
+        <ul>
+          <li>
+            <p>
+              Create and switch to a new branch with
+              <code>git checkout -b feature-branch</code>. In our case, we first
+              created a <code>development</code> branch from <code>main</code>.
+              Then, for each separate page, we created feature branches. For
+              example, this page was made on the branch
+              <code>git checkout -b development-branching</code>.
+            </p>
+          </li>
+          <li>
+            If we want to switch back to our development branch we can use
+            <code>git checkout development</code> This allows me to from the
+            <code>development-branching</code> to
+            <code>development</code> branch.
+          </li>
+          <li>
+            If we want to delete a branch, then we can use 
+            <code>git branch -d development-branching</code> This deletes the
+            <code>development-branching</code> from the
+            <code>development</code> branch.
+          </li>
+          <li></li>
+        </ul>
+      </div>
     </main>
     <footer>
-        <p>&copy Seth Villiam Oscar</p>
+      <p>&copy Seth Villiam Oscar</p>
     </footer>
-</body>
+  </body>
 </html>
-
