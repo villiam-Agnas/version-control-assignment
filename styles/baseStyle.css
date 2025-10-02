@@ -1,7 +1,7 @@
 @import url('fonts.css');
 
 :root {
-    --background-color: linear-gradient(left, #7A6174, #9B9FB5);
+    --background-color: linear-gradient(to right, #7A6174, #7f7093, #6e7181);
     --main-color: rgb(234, 234, 234);
     --main-background-color: #7a6174;
     --secondary-background-color: #9b9fb5;
@@ -22,7 +22,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: var(--main-background-color);
+    background-image: var(--background-color);
     color: var(--main-color);
     font-family: var(--font-family);
 }
@@ -35,17 +35,30 @@ header {
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
     padding: 0 2rem;
+
+    h1 a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
 }
 
 .active {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+.active:hover {
     background-color: var(--main-background-color);
     color: var(--main-color);
-    text-decoration: none;
+    transform: scale(1.4);
 }
 
 .nav-option {
     padding: 8px 10px;
     border-radius: 12px;
+    font-size: 1.1rem;
 }
 
 .main {
