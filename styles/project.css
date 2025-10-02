@@ -28,15 +28,19 @@
 }
 
 .tutorial--image {
-    height: 150px;
+    height: auto;
+    width: 90%;
     border: 4px solid black;
     margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tutorial--text {
-    height: 150px;
     border: 4px solid black;
     margin: 16px;
+    padding: 4px;
 }
 
 
