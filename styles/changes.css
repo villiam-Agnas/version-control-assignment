@@ -52,6 +52,8 @@
 }
 
 .terminal-text {
+    width: fit-content;
+    min-height: fit-content;
     background-color: black;
     font-size: 1.3rem;
     padding: 13px;
@@ -59,5 +61,21 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+@media (orientation: portrait) {
+    .example {
+        flex-direction: column;
+    }
+
+    .instructions {
+        width: 100%;
+        margin: 0;
+    }
+
+    .demo {
+        width: 100%;
+    }
+}
+
 
 

@@ -1,5 +1,13 @@
 @import url('fonts.css');
-@import url('variables.css');
+
+:root {
+    --background-color: linear-gradient(to right, #52404e, #50496c, #53596c);
+    --main-color: rgb(234, 234, 234);
+    --main-background-color: #7a6174;
+    --secondary-background-color: #9b9fb5;
+    --secondary-color: rgb(39, 38, 38);
+    --font-family: 'Share Tech', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 * {
     box-sizing: border-box;
