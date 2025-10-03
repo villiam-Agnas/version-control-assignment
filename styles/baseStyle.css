@@ -28,17 +28,17 @@ body {
 }
 
 header {
-    height: 12vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
-    padding: 0 3vw;
+    padding: 16px 3vw;
 
     h1 {
         margin: 0;
+        padding: 7px;
         font-size: 2rem;
 
         a {
@@ -91,4 +91,11 @@ footer {
     justify-content: center;
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
+}
+
+@media (orientation: portrait) {
+    
+    header {
+        flex-direction: column;
+    }
 }

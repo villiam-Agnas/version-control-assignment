@@ -34,6 +34,8 @@
 }
 
 .demo {
+    display: flex;
+    flex-wrap: wrap;
     width: 50%;
     padding: 3%;
     background: transparent;
@@ -46,16 +48,18 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     height: 25px;
+    width: 100%;
     font-size: 1rem;
     color: rgba(240, 248, 255, 0.11);
     padding: 5px 8px;
 }
 
 .terminal-text {
-    width: fit-content;
+    width: 100%;
     min-height: fit-content;
     background-color: black;
     font-size: 1.3rem;
+    word-wrap: break-word;
     padding: 13px;
     color: rgb(203, 203, 203);
     border-bottom-left-radius: 5px;
