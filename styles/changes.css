@@ -1,21 +1,42 @@
+@import url('fonts.css');
+@import url('variables.css');
+
 .page-title {
-    margin-top: 1vh;
-    margin-left: 2vw;
-    width: clamp(80px, 25vw, 500px);
+    margin-top: 3vh;
+    margin-left: clamp(20px, 2.5vw, 80px);
+    width: clamp(150px, 12vw, 210px);
     height: fit-content;
 }
 
 .title-head {
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(74, 74, 74);
     height: 25px;
     font-size: 1rem;
     color: rgba(240, 248, 255, 0.11);
-    padding: 5px;
+    padding: 5px 8px;
 }
 
 .title-text {
     background-color: black;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 13px;
-    color: rgb(2, 190, 27);
+    color: rgb(203, 203, 203);
 }
+
+.body {
+    margin-top: 4vh;
+    margin-left: clamp(35px, 3.5vw, 100px);
+    color: var(--main-color);
+}
+
+.subheading {
+    font-size: 2rem;
+}
+
+.content {
+    font-size: 1.3rem;
+    margin-left: 1vw;
+}
+

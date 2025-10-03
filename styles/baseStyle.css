@@ -1,13 +1,5 @@
 @import url('fonts.css');
-
-:root {
-    --background-color: linear-gradient(to right, #7A6174, #7f7093, #6e7181);
-    --main-color: rgb(234, 234, 234);
-    --main-background-color: #7a6174;
-    --secondary-background-color: #9b9fb5;
-    --secondary-color: rgb(39, 38, 38);
-    --font-family: 'Share Tech', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+@import url('variables.css');
 
 * {
     box-sizing: border-box;
@@ -28,37 +20,58 @@ body {
 }
 
 header {
+    height: 97px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
-    padding: 0 2rem;
+    padding: 0 3vw;
 
-    h1 a {
-        text-decoration: none;
-        color: var(--secondary-color);
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+
+        a {
+                text-decoration: none;
+                color: var(--secondary-color);
+            }
     }
 }
 
-.active {
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.nav-option {
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
     text-decoration: none;
     transition: all .4s ease-in-out;
+    padding: 8px 10px;
+    margin: 0 .2vw;
+    border-radius: 6px;
+    font-size: 1.2rem;
 }
 
-.active:hover {
+.nav-option:hover {
     background-color: var(--main-background-color);
     color: var(--main-color);
-    transform: scale(1.4);
+    transform: scale(1.1);
 }
 
-.nav-option {
-    padding: 8px 10px;
-    border-radius: 12px;
-    font-size: 1.1rem;
+nav:hover .active {
+    transform: scale(1);
+}
+
+.active {
+    transform: scale(1.2);
+    font-weight: bold;
+    transition: all .4s ease-in-out;
 }
 
 .main {
@@ -71,4 +84,3 @@ footer {
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
 }
-
