@@ -1,12 +1,12 @@
 .branching-page {
   align-items: center;
+  background-color: var(--secondary-background-color);
+  border-radius: 16px;
+  color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  padding: 3rem;
   margin: 3rem;
-  border-radius: 16px;
-  background-color: var(--secondary-background-color);
-  color: var(--secondary-color);
+  padding: 3rem;
 }
 
 code {
