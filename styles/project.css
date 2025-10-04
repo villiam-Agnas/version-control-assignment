@@ -15,6 +15,10 @@
     h2 {
         text-decoration: underline;
     }
+
+    li {
+        margin-bottom: 16px;
+    }
 }
 
 .tutorial {
@@ -42,5 +46,22 @@
     margin: 16px;
     padding: 4px;
 }
+
+@media screen and (min-width: 769px) {
+    .wrapper {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .content,
+    .tutorial {
+        width: 45%;
+        height: auto;
+    }
+}
+
 
 
