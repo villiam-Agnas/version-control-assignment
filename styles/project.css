@@ -41,6 +41,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform .2s;
+    border-radius: 4px;
+}
+
+.tutorial--image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
 }
 
 .tutorial--text {
@@ -61,7 +68,6 @@
     }
 
     .content {
-        align-self: start;
         height: fit-content;   
     }
 }
