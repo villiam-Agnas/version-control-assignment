@@ -1,85 +1,83 @@
-@import url('fonts.css');
-@import url('variables.css');
+@import url("fonts.css");
+@import url("variables.css");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .body {
-    margin-top: 4vh;
-    color: var(--main-color);
+  margin-top: 6vh;
+  color: var(--main-color);
 }
 
 .subheading {
-    font-size: 2rem;
-    margin-left: clamp(35px, 3.5vw, 100px);
+  font-size: 2rem;
+  margin-left: clamp(35px, 3.5vw, 100px);
+  margin-top: 5vh;
+  border-bottom: solid 1.5px var(--main-color);
 }
 
 .example {
-    display: flex;
-    width: 100%;
-    border-top: solid 1px var(--main-color);
+  display: flex;
+  width: 100%;
 }
 
 .instructions {
-    font-size: 1.3rem;
-    margin-left: 1vw;
-    width: 50%;
-    padding: 3%;
+  font-size: 1.3rem;
+  width: 50%;
+  padding: 2% 3%;
 
-    p{
-        margin: 0;
-        padding: 0;
-    }
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .demo {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    padding: 3%;
-    background: transparent;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 1.2% 3%;
+  background: transparent;
 }
 
 .terminal-head {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(74, 74, 74);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 25px;
-    width: 100%;
-    font-size: 1rem;
-    color: rgba(240, 248, 255, 0.11);
-    padding: 5px 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(74, 74, 74);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 25px;
+  width: 100%;
+  font-size: 1rem;
+  color: rgba(240, 248, 255, 0.11);
+  padding: 5px 8px;
 }
 
 .terminal-text {
-    width: 100%;
-    min-height: fit-content;
-    background-color: black;
-    font-size: 1.3rem;
-    word-wrap: break-word;
-    padding: 13px;
-    color: rgb(203, 203, 203);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  width: 100%;
+  min-height: fit-content;
+  background-color: black;
+  font-size: 1.3rem;
+  word-wrap: break-word;
+  padding: 13px;
+  color: rgb(203, 203, 203);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 @media (orientation: portrait) {
-    .example {
-        flex-direction: column;
-    }
+  .example {
+    flex-direction: column;
+  }
 
-    .instructions {
-        width: 100%;
-        margin: 0;
-    }
+  .instructions {
+    width: 100%;
+    margin: 0;
+  }
 
-    .demo {
-        width: 100%;
-    }
+  .demo {
+    width: 100%;
+  }
 }
-
-
-
