@@ -66,6 +66,10 @@
   border-bottom-right-radius: 5px;
 }
 
+.spacer {
+  height: 30px;
+}
+
 @media (orientation: portrait) {
   .example {
     flex-direction: column;
