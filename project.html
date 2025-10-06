@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home page</title>
+    <title>Project</title>
     <link rel="stylesheet" href="./styles/baseStyle.css" />
+    <link rel="stylesheet" href="./styles/project.css" />
   </head>
   <body>
     <header>
@@ -17,7 +18,149 @@
         <a class="nav-option" href="about.html">[About Us]</a>
       </nav>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <div class="intro">
+        <h2>[Projects on GitHub!]</h2>
+      </div>
+      <div class="wrapper">
+        <div class="content">
+          <h2>Why are remote repositories necessary?</h2>
+          <p>
+            Remote repositories are the backbone for working together as a team
+            on a project. They provide a central hub for teams to work on the
+            same project by moving the project from your local device to a
+            shared cloud. This remote repository on the cloud is then used to
+            share the code by making it available on more local devices, it also
+            ensures that there is a backup of the code making sure no work is
+            lost due to your computer or device failing. Remote repositories on
+            GitHub also tracks all work being made on the code which is
+            essential for a developer to be able to show their work, as well as
+            making everything clear on who works at what. Remote repos also make
+            sure that you can always go back to previous iteration of the code
+            if something where to break which helps with making sure you have a
+            working product.
+          </p>
+        </div>
+        <div class="tutorial">
+          <h2>How do you create a project on github?</h2>
+          <div class="tutorial--wrapper">
+            <img
+              class="tutorial--image"
+              src="./img/step1.png"
+              alt="first step in setting up your repo"
+              height="300px"
+              width="300px"
+            />
+            <div class="tutorial--text">
+              <p>
+                First step to setting up your repo is to have an account on
+                GitHub and a project you want to move to a local repository.
+                Then when you are in your project folder, type the words git
+                init in the terminal. This adds a hidden folder to your project
+                that allows it to be connected to GitHub.
+              </p>
+            </div>
+          </div>
+          <div class="tutorial--wrapper">
+            <img
+              class="tutorial--image"
+              src="./img/step2.png"
+              alt="second step in setup"
+              height="300px"
+              width="300px"
+            />
+            <div class="tutorial--text">
+              <p>
+                The second step is to go to your GitHub and click new
+                repository, this will take you to a page where you can create a
+                repository. Once you have everything like you want it click
+                create repository.
+              </p>
+            </div>
+          </div>
+          <div class="tutorial--wrapper">
+            <img
+              class="tutorial--image"
+              src="./img/step3.png"
+              alt="third step in setup"
+            />
+            <div class="tutorial--text">
+              <p>
+                GitHub will then give you a few more commands to write in the
+                terminal of your project, these commands are for making your
+                first git add, git commit and then lastly git push. So start off
+                by typing [git add .] to add all of your files in your project
+                before moving on to doing your first git commit. All these
+                commands will also link your project with your repository on
+                GitHub. The first time you do this a window will pop up asking
+                you to authorize your computer with GitHub, once you have done
+                this your computer will be connected to GitHub.
+              </p>
+            </div>
+          </div>
+          <div class="tutorial--wrapper">
+            <img
+              class="tutorial--image"
+              src="./img/step4.png"
+              alt="final step in setup"
+            />
+            <div class="tutorial--text">
+              <p>
+                Congratulations! You have now made your first remote repository!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h2>Good git commands to know</h2>
+          <ul>
+            <li>
+              [git init] : Creates a new Git repository, can also covert
+              existing project to a git repository.
+            </li>
+            <li>
+              [git add] : Puts changes you have done to your code in a staging
+              arena, its like telling git you want to save these changes in your
+              next commit. You can specify what you want to add but if you want
+              to add every change you have done use [git add .]
+            </li>
+            <li>
+              [git commit] : Commits the added changes in your staging area, you
+              can also add descriptions on what the commit is for by typing [git
+              commit -m "your comment here"] which help your teammates to know
+              what you are doing.
+            </li>
+            <li>
+              [git branch -m main] : Creates the main branch of your project on
+              your local device
+            </li>
+            <li>
+              [git remote add origin "link gotten from github here"] : Links
+              your local repository to your remote repository
+            </li>
+            <li>
+              [git push -u origin main] : pushes your committed changes to your
+              remote repository, also states your main branch as origin so you
+              only need to type git push when you want to push in the future
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h2>How can others contribute to the project?</h2>
+          <p>
+            Now that you have your remote repository set up other people will
+            now be able to go to your GitHub and clone your code. you can also
+            make them collaborators on the project. Once your teammates have
+            cloned your code they can start adding to it, the best and safest
+            way to do this would be to use a
+            <a href="branching.html">branch</a>. Then everyone in the team can
+            work on separate parts of the code without there being any changes
+            to the main code, and once someone is done with their work they can
+            then merge their branch with the main one.
+          </p>
+        </div>
+      </div>
+    </main>
     <footer>
       <p>&copy Seth Villiam Oscar</p>
     </footer>
