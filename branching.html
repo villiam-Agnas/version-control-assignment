@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home page</title>
     <link rel="stylesheet" href="./styles/baseStyle.css" />
+    <link rel="stylesheet" href="./styles/branching.css" />
   </head>
   <body>
     <header>
@@ -17,7 +18,54 @@
         <a class="nav-option" href="about.html">[About Us]</a>
       </nav>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <div class="branching-page">
+        <h2>[What is branching in Git, and why should you use it?]</h2>
+        <p>
+          A branch is an independent line of development. It lets teammates
+          build features and fixes in parallel without breaking the main
+          project. Branching acts as an extra safety measure for you and your
+          teammates.
+        </p>
+      </div>
+      <div class="branching-page">
+        <h2>[Git Branching Commands]</h2>
+        <ul>
+          <li>
+            <p>
+              Create and switch to a new branch with
+              <code>git checkout -b feature-branch</code>. In our case, we first
+              created a <code>development</code> branch from <code>main</code>.
+              Then, for each separate page, we created feature branches. For
+              example, this page was made on the branch
+              <code>git checkout -b development-branching</code>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If we want to switch back to our development branch we can use
+              <code>git checkout development</code> This allows me to move from
+              the <code>development-branching</code> to
+              <code>development</code> branch.
+            </p>
+          </li>
+          <li>
+            <p>
+              If we want to delete a branch, then we can use
+              <code>git branch -d development-branching</code> This deletes the
+              local branch called <code>development-branching</code>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If we want to see all the branches that are local and remote, you
+              can use the command
+              <code>git branch -a</code>.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
     <footer>
       <p>&copy Seth Villiam Oscar</p>
     </footer>
