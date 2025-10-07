@@ -1,0 +1,37 @@
+.branching-page {
+  align-items: center;
+  background-color: var(--secondary-background-color);
+  border-radius: 16px;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+code:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .branching-page {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}

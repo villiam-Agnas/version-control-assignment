@@ -6,8 +6,7 @@
   --main-background-color: #7a6174;
   --secondary-background-color: #9b9fb5;
   --secondary-color: rgb(39, 38, 38);
-  --font-family: "Share Tech", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  --font-family: "Share Tech", "Gill Sans MT", Calibri, "Trebuchet MS",sans-serif;
 }
 
 * {
