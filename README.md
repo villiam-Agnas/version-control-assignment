@@ -13,7 +13,7 @@ This website covers the following core Git topics:
 This website helps you learn the fundamentals of starting a GitHub project and collaborating efficiently with your team.
 
 ## **Check Out Our Website**
-**Git Tutorial Website**: Here is a live preview of our website ➡️  
+**Git Tutorial Website**: Here is a live preview of our website 
 👉 [Live Demo](https://villiam-agnas.github.io/version-control-assignment/)
 
 ## **Structure of the Website**
