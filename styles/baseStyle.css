@@ -1,1 +1,169 @@
+@import url("fonts.css");
 
+:root {
+  --background-color: linear-gradient(to right, #52404e, #50496c, #53596c);
+  --main-color: rgb(234, 234, 234);
+  --main-background-color: #7a6174;
+  --secondary-background-color: #9b9fb5;
+  --secondary-color: rgb(39, 38, 38);
+  --font-family: "Share Tech", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: var(--background-color);
+  color: var(--main-color);
+  font-family: var(--font-family);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-color);
+  padding: 16px 3vw;
+
+  h1 {
+    margin: 0;
+    padding: 7px;
+    font-size: 2rem;
+
+    a {
+      text-decoration: none;
+      color: var(--secondary-color);
+    }
+  }
+}
+
+.wave-text span {
+  display: inline-block;
+  font-size: 4rem;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.wave-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.wave-text span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.wave-text span:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.wave-text span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.wave-text span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+
+.wave-text span:nth-child(9) {
+  animation-delay: 1.6s;
+}
+
+.wave-text span:nth-child(10) {
+  animation-delay: 1.8s;
+}
+
+.wave-text span:nth-child(11) {
+  animation-delay: 2s;
+}
+
+.wave-text span:nth-child(12) {
+  animation-delay: 2.2s;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.nav-option {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  padding: 8px 10px;
+  margin: 0 0.2vw;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+.nav-option:hover {
+  background-color: var(--main-background-color);
+  color: var(--main-color);
+  transform: scale(1.1);
+}
+
+nav:hover .active {
+  transform: scale(1);
+}
+
+.active {
+  transform: scale(1.2);
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-color);
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (orientation: portrait) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+  }
+}

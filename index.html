@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home page</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./styles/baseStyle.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wave-container">
+        <h1 class="wave-text">
+          <a href="index.html"
+            ><span>G</span><span>i</span><span>t</span> <span>T</span
+            ><span>u</span><span>t</span><span>o</span><span>r</span
+            ><span>i</span><span>a</span><span>l</span><span>!</span></a
+          >
+        </h1>
+      </div>
+      <nav>
+        <a class="nav-option active" href="index.html">[Home]</a>
+        <a class="nav-option" href="project.html">[Project]</a>
+        <a class="nav-option" href="changes.html">[Changes]</a>
+        <a class="nav-option" href="branching.html">[Branching]</a>
+        <a class="nav-option" href="about.html">[About Us]</a>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="welcome">
+        Welcome to Git Tutorial!
+        <div class="welcome-text">
+          This is a website designed to help you use git and github to manage
+          your coding projects. Choose any of the options below to begin.
+        </div>
+      </div>
+      <div class="box-grid">
+        <div class="page-box">
+          <a href="project.html">
+            <div class="box-area">
+              <div class="page-header">Creating a project➩</div>
+              <div class="page-text">
+                Learn how to create a new project in Github and link a it to a
+                local project on your computer!
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="page-box">
+          <a href="changes.html">
+            <div class="box-area">
+              <div class="page-header">Making changes to a repository➩</div>
+              <div class="page-text">
+                See how to add your own code to a pre-existing repository and
+                how to stage, commit, and push it.
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="page-box">
+          <a href="branching.html">
+            <div class="box-area">
+              <div class="page-header">Making branches in a repository➩</div>
+              <div class="page-text">
+                Why is branching important? Find out how to make branches on
+                this page.
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="page-box">
+          <a href="about.html">
+            <div class="box-area">
+              <div class="page-header">About Us➩</div>
+              <div class="page-text">
+                Learn more about the creators of this beautiful website here.
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy Seth Villiam Oscar</p>
+    </footer>
+  </body>
 </html>
